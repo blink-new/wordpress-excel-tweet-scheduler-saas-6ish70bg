@@ -1,0 +1,271 @@
+export const languages = {
+  en: { code: 'en', name: 'English', direction: 'ltr' },
+  ar: { code: 'ar', name: 'العربية', direction: 'rtl' }
+} as const
+
+export const translations = {
+  en: {
+    // Navigation
+    'nav.dashboard': 'Dashboard',
+    'nav.upload': 'Upload',
+    'nav.calendar': 'Calendar',
+    'nav.profile': 'Profile',
+    'nav.admin': 'Admin',
+    'nav.logout': 'Logout',
+    
+    // Landing Page
+    'hero.title': 'Schedule Your Tweets from Excel',
+    'hero.subtitle': 'The Smart Way to Post!',
+    'hero.description': 'Upload your Excel sheet. Schedule tweets. Reach your audience without lifting a finger.',
+    'hero.cta': 'Start Free Trial',
+    'hero.no_card': 'No Credit Card Required',
+    
+    // Features
+    'features.upload': 'Upload Excel',
+    'features.schedule': 'Auto Schedule',
+    'features.track': 'Track Tweets',
+    'features.google_auth': 'Google or email signup',
+    'features.trial': '3-day free trial',
+    'features.arabic': 'Full Arabic support (RTL)',
+    'features.dashboard': 'Powerful dashboard',
+    'features.payments': 'Local payment support',
+    'features.ui': 'Clean, modern UI',
+    'features.gulf': 'Built for Saudi & Gulf creators',
+    
+    // Stats
+    'stats.users': 'Users registered',
+    'stats.tweets': 'Tweets scheduled',
+    'stats.visits': 'Platform visits',
+    'stats.rating': 'User rating',
+    
+    // Subscription Plans
+    'plans.trial': 'Trial',
+    'plans.starter': 'Starter',
+    'plans.pro': 'Pro',
+    'plans.enterprise': 'Enterprise',
+    'plans.monthly': 'Monthly',
+    'plans.tweets': 'Tweets',
+    'plans.select': 'Select Plan',
+    'plans.current': 'Current Plan',
+    
+    // Dashboard
+    'dashboard.welcome': 'Welcome back',
+    'dashboard.subtitle': 'Manage your scheduled tweets and track your progress',
+    'dashboard.usage': 'Usage This Month',
+    'dashboard.tweetsLeft': 'tweets left',
+    'dashboard.upgrade': 'Upgrade Plan',
+    'dashboard.quickActions': 'Quick Actions',
+    'dashboard.uploadFile': 'Upload File',
+    'dashboard.viewCalendar': 'View Calendar',
+    'dashboard.analytics': 'Analytics',
+    'dashboard.settings': 'Settings',
+    'dashboard.stats.scheduled': 'Scheduled',
+    'dashboard.stats.published': 'Published',
+    'dashboard.stats.failed': 'Failed',
+    'dashboard.stats.thisWeek': 'This Week',
+    
+    // Upload
+    'upload.title': 'Upload & Schedule Tweets',
+    'upload.subtitle': 'Upload your Excel or CSV file to schedule tweets automatically',
+    'upload.dropzone.title': 'Upload Your File',
+    'upload.dropzone.description': 'Drag and drop your Excel or CSV file here, or click to browse',
+    'upload.dropzone.dragActive': 'Drop your file here...',
+    'upload.dropzone.dragInactive': 'Drag & drop your Excel/CSV file here, or click to select',
+    'upload.dropzone.formats': 'Supports .xlsx, .xls, .csv files (max 5MB)',
+    'upload.preview.title': 'Tweet Preview',
+    'upload.preview.description': 'Review and edit your tweets before scheduling',
+    'upload.scheduleAll': 'Schedule All Tweets',
+    'upload.scheduling': 'Scheduling...',
+    'upload.status.pending': 'Pending',
+    'upload.status.scheduled': 'Scheduled',
+    'upload.status.error': 'Error',
+    'upload.instructions.title': 'File Format Instructions',
+    'upload.instructions.format.title': 'Required Columns',
+    'upload.instructions.format.column1': 'Column A: Tweet content (max 280 characters)',
+    'upload.instructions.format.column2': 'Column B: Scheduled date (YYYY-MM-DD)',
+    'upload.instructions.format.column3': 'Column C: Scheduled time (HH:MM)',
+    'upload.instructions.tips.title': 'Tips for Best Results',
+    'upload.instructions.tips.tip1': 'Use clear, engaging content with relevant hashtags',
+    'upload.instructions.tips.tip2': 'Schedule tweets during peak engagement hours',
+    'upload.instructions.tips.tip3': 'Include variety in your content mix',
+    
+    // Upload Table
+    'upload.table.content': 'Content',
+    'upload.table.scheduledTime': 'Scheduled Time',
+    'upload.table.status': 'Status',
+    'upload.table.actions': 'Actions',
+    'upload.table.characters': 'characters',
+    'upload.table.remove': 'Remove tweet',
+    
+    // Upload Stats
+    'upload.stats.total': 'Total',
+    'upload.stats.pending': 'Pending',
+    'upload.stats.scheduled': 'Scheduled',
+    'upload.stats.errors': 'Errors',
+    
+    // Calendar
+    'calendar.title': 'Tweet Calendar',
+    'calendar.subtitle': 'View and manage your scheduled tweets',
+    'calendar.today': 'Today',
+    'calendar.analytics': 'Analytics',
+    'calendar.tweetsScheduled': 'tweets scheduled',
+    'calendar.noTweets': 'No tweets scheduled for this date',
+    'calendar.quickStats': 'Quick Stats',
+    'calendar.filter.all': 'All Tweets',
+    'calendar.filter.scheduled': 'Scheduled',
+    'calendar.filter.published': 'Published',
+    'calendar.filter.failed': 'Failed',
+    'calendar.stats.total': 'Total Tweets',
+    'calendar.stats.scheduled': 'Scheduled',
+    'calendar.stats.published': 'Published',
+    'calendar.stats.failed': 'Failed',
+    
+    // Common
+    'common.loading': 'Loading...',
+    'common.error': 'Error',
+    'common.success': 'Success',
+    'common.cancel': 'Cancel',
+    'common.save': 'Save',
+    'common.delete': 'Delete',
+    'common.edit': 'Edit',
+    'common.view': 'View',
+    'common.upload': 'Upload',
+    'common.download': 'Download',
+    'common.search': 'Search',
+    'common.filter': 'Filter',
+    'common.sort': 'Sort',
+    'common.settings': 'Settings'
+  },
+  ar: {
+    // Navigation
+    'nav.dashboard': 'لوحة التحكم',
+    'nav.upload': 'رفع الملفات',
+    'nav.calendar': 'التقويم',
+    'nav.profile': 'الملف الشخصي',
+    'nav.admin': 'الإدارة',
+    'nav.logout': 'تسجيل الخروج',
+    
+    // Landing Page
+    'hero.title': 'جدولة تغريداتك من الإكسل',
+    'hero.subtitle': 'الطريقة الذكية للنشر!',
+    'hero.description': 'ارفع ملف الإكسل الخاص بك. جدول التغريدات. اوصل لجمهورك دون عناء.',
+    'hero.cta': 'ابدأ التجربة المجانية',
+    'hero.no_card': 'لا حاجة لبطاقة ائتمان',
+    
+    // Features
+    'features.upload': 'رفع الإكسل',
+    'features.schedule': 'جدولة تلقائية',
+    'features.track': 'تتبع التغريدات',
+    'features.google_auth': 'تسجيل بجوجل أو الإيميل',
+    'features.trial': 'تجربة مجانية 3 أيام',
+    'features.arabic': 'دعم كامل للعربية',
+    'features.dashboard': 'لوحة تحكم قوية',
+    'features.payments': 'دعم الدفع المحلي',
+    'features.ui': 'واجهة نظيفة وحديثة',
+    'features.gulf': 'مصمم للمبدعين السعوديين والخليجيين',
+    
+    // Stats
+    'stats.users': 'مستخدم مسجل',
+    'stats.tweets': 'تغريدة مجدولة',
+    'stats.visits': 'زيارة للمنصة',
+    'stats.rating': 'تقييم المستخدمين',
+    
+    // Subscription Plans
+    'plans.trial': 'تجربة',
+    'plans.starter': 'مبتدئ',
+    'plans.pro': 'محترف',
+    'plans.enterprise': 'مؤسسي',
+    'plans.monthly': 'شهرياً',
+    'plans.tweets': 'تغريدة',
+    'plans.select': 'اختر الخطة',
+    'plans.current': 'الخطة الحالية',
+    
+    // Dashboard
+    'dashboard.welcome': 'مرحباً بعودتك',
+    'dashboard.subtitle': 'إدارة تغريداتك المجدولة وتتبع تقدمك',
+    'dashboard.usage': 'الاستخدام هذا الشهر',
+    'dashboard.tweetsLeft': 'تغريدة متبقية',
+    'dashboard.upgrade': 'ترقية الخطة',
+    'dashboard.quickActions': 'إجراءات سريعة',
+    'dashboard.uploadFile': 'رفع ملف',
+    'dashboard.viewCalendar': 'عرض التقويم',
+    'dashboard.analytics': 'التحليلات',
+    'dashboard.settings': 'الإعدادات',
+    'dashboard.stats.scheduled': 'مجدولة',
+    'dashboard.stats.published': 'منشورة',
+    'dashboard.stats.failed': 'فشلت',
+    'dashboard.stats.thisWeek': 'هذا الأسبوع',
+    
+    // Upload
+    'upload.title': 'رفع وجدولة التغريدات',
+    'upload.subtitle': 'ارفع ملف الإكسل أو CSV لجدولة التغريدات تلقائياً',
+    'upload.dropzone.title': 'ارفع ملفك',
+    'upload.dropzone.description': 'اسحب وأفلت ملف الإكسل أو CSV هنا، أو انقر للتصفح',
+    'upload.dropzone.dragActive': 'أفلت ملفك هنا...',
+    'upload.dropzone.dragInactive': 'اسحب وأفلت ملف الإكسل/CSV هنا، أو انقر للاختيار',
+    'upload.dropzone.formats': 'يدعم ملفات .xlsx, .xls, .csv (حد أقصى 5 ميجا)',
+    'upload.preview.title': 'معاينة التغريدات',
+    'upload.preview.description': 'راجع وعدل تغريداتك قبل الجدولة',
+    'upload.scheduleAll': 'جدولة جميع التغريدات',
+    'upload.scheduling': 'جاري الجدولة...',
+    'upload.status.pending': 'في الانتظار',
+    'upload.status.scheduled': 'مجدولة',
+    'upload.status.error': 'خطأ',
+    'upload.instructions.title': 'تعليمات تنسيق الملف',
+    'upload.instructions.format.title': 'الأعمدة المطلوبة',
+    'upload.instructions.format.column1': 'العمود أ: محتوى التغريدة (حد أقصى 280 حرف)',
+    'upload.instructions.format.column2': 'العمود ب: تاريخ الجدولة (YYYY-MM-DD)',
+    'upload.instructions.format.column3': 'العمود ج: وقت الجدولة (HH:MM)',
+    'upload.instructions.tips.title': 'نصائح لأفضل النتائج',
+    'upload.instructions.tips.tip1': 'استخدم محتوى واضح وجذاب مع هاشتاغات ذات صلة',
+    'upload.instructions.tips.tip2': 'جدول التغريدات خلال ساعات الذروة',
+    'upload.instructions.tips.tip3': 'اشمل تنوعاً في مزيج المحتوى',
+    
+    // Upload Table
+    'upload.table.content': 'المحتوى',
+    'upload.table.scheduledTime': 'وقت الجدولة',
+    'upload.table.status': 'الحالة',
+    'upload.table.actions': 'الإجراءات',
+    'upload.table.characters': 'حرف',
+    'upload.table.remove': 'حذف التغريدة',
+    
+    // Upload Stats
+    'upload.stats.total': 'الإجمالي',
+    'upload.stats.pending': 'في الانتظار',
+    'upload.stats.scheduled': 'مجدولة',
+    'upload.stats.errors': 'أخطاء',
+    
+    // Calendar
+    'calendar.title': 'تقويم التغريدات',
+    'calendar.subtitle': 'عرض وإدارة تغريداتك المجدولة',
+    'calendar.today': 'اليوم',
+    'calendar.analytics': 'التحليلات',
+    'calendar.tweetsScheduled': 'تغريدة مجدولة',
+    'calendar.noTweets': 'لا توجد تغريدات مجدولة لهذا التاريخ',
+    'calendar.quickStats': 'إحصائيات سريعة',
+    'calendar.filter.all': 'جميع التغريدات',
+    'calendar.filter.scheduled': 'مجدولة',
+    'calendar.filter.published': 'منشورة',
+    'calendar.filter.failed': 'فشلت',
+    'calendar.stats.total': 'إجمالي التغريدات',
+    'calendar.stats.scheduled': 'مجدولة',
+    'calendar.stats.published': 'منشورة',
+    'calendar.stats.failed': 'فشلت',
+    
+    // Common
+    'common.loading': 'جاري التحميل...',
+    'common.error': 'خطأ',
+    'common.success': 'نجح',
+    'common.cancel': 'إلغاء',
+    'common.save': 'حفظ',
+    'common.delete': 'حذف',
+    'common.edit': 'تعديل',
+    'common.view': 'عرض',
+    'common.upload': 'رفع',
+    'common.download': 'تحميل',
+    'common.search': 'بحث',
+    'common.filter': 'تصفية',
+    'common.sort': 'ترتيب',
+    'common.settings': 'الإعدادات'
+  }
+} as const
